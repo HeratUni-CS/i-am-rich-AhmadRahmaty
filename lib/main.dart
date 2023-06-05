@@ -5,7 +5,6 @@ void main() => runApp(iamRich());
 class iamRich extends StatelessWidget {
   const iamRich({Key? key})
       : super(key: key);
-
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -13,7 +12,12 @@ class iamRich extends StatelessWidget {
         appBar: AppBar(
             title: Text("I'm Rich"),
             centerTitle: true),
-        body: Center(child: Image(image: AssetImage('images/rich.jpg'))),
+        body: Center(
+          child: Image(
+            image: AssetImage(
+                'images/rich.jpg'),
+          ),
+        ),
       ),
     );
   }
